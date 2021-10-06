@@ -1,10 +1,10 @@
-import users from './users.js';
+import users from './users';
 import userItemTemplate from '../templates/user.html';
 
 const dataContent = document.querySelector('.data-repeat');
 
 users.forEach((user, index) => {
-  let singleNode = userItemTemplate
+  const singleNode = userItemTemplate
     .replace('$no', index)
     .replace('$name', user.name)
     .replace('$class', user.class)
