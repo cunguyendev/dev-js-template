@@ -2,6 +2,7 @@ import users from './users';
 import userItemTemplate from '../templates/user.html';
 
 const dataContent = document.querySelector('.data-repeat');
+const print = document.getElementById('print');
 
 users.forEach((user, index) => {
   const singleNode = userItemTemplate
@@ -12,4 +13,8 @@ users.forEach((user, index) => {
     .replace('$address', user.address);
 
   dataContent.innerHTML += singleNode;
+});
+
+print.addEventListener('click', () => {
+  window.print();
 });
