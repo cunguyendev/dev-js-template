@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body {
+  font-family: 'Mukta', sans-serif;
+}
+
 .container {
   position: absolute;
   top: 50%;
@@ -27,4 +33,34 @@ tbody {
       }
     }
   }
+}
+
+$table-border-color: #fff;
+
+table {
+  border: 1px solid $table-border-color;
+}
+
+thead {
+  border-bottom: 1px solid $table-border-color;
+}
+
+tbody {
+  tr {
+    border-bottom: 1px solid $table-border-color;
+  }
+}
+
+.btn-print {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  font-family: 'Mukta', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  color: #fff;
 }
